@@ -1,0 +1,14 @@
+#venn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#admin-content {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}

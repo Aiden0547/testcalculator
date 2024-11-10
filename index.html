@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>집합 계산기</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3-venn@1"></script>
+    <link rel="stylesheet" href="css/style.css"> <!-- 스타일 파일 로드 -->
+</head>
+<body>
+    <h1>집합 계산기</h1>
+
+    <label>집합 A: <input id="setA" placeholder="예: 1,2,3"></label><br>
+    <label>집합 B: <input id="setB" placeholder="예: 3,4,5"></label><br><br>
+
+    <button onclick="calculateUnion()">합집합</button>
+    <button onclick="calculateIntersection()">교집합</button>
+    <button onclick="calculateDifference()">차집합</button>
+    <button onclick="calculateSymmetricDifference()">대칭 차집합</button>
+
+    <h3>결과: <span id="result"></span></h3>
+
+    <div id="venn"></div> <!-- Venn Diagram Container -->
+
+    <script src="js/script.js"></script> <!-- JS 파일 로드 -->
+</body>
+</html>
