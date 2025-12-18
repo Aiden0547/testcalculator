@@ -1,14 +1,83 @@
+/* 기본 리셋 */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+/* 전체 레이아웃 */
+body {
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 제목 */
+h1 {
+    margin-bottom: 30px;
+    color: #333;
+}
+
+/* 입력 영역 */
+label {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 10px;
+    display: block;
+}
+
+input {
+    width: 250px;
+    padding: 8px 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* 버튼 영역 */
+button {
+    padding: 10px 16px;
+    margin: 8px 5px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #357abd;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* 결과 영역 */
+h3 {
+    margin-top: 25px;
+    color: #333;
+}
+
+#result {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Venn 다이어그램 영역 */
 #venn {
+    margin-top: 30px;
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-}
-
-#admin-content {
-    display: none;
-}
-
-h1 {
-    text-align: center;
-    font-size: 24px;
+    align-items: center;
 }
